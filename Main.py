@@ -1,4 +1,3 @@
-
 class Evaluate:
   """This class validates and evaluate postfix expression.
   Attributes:
@@ -9,7 +8,7 @@ class Evaluate:
     # Write your code here
 
 
-  def ___init___ (self, size):
+  def __init__ (self, size):
     """Inits Evaluate with top, size_of_stack and stack.
     Arguments:
       top:An integer which points to the top most element in the stack.
@@ -109,7 +108,7 @@ class Evaluate:
           stack.pop()
     return int(stack[-1])
 
-#   Do not change the following code
+# Do not change the following code
 postfix_expression = input()  # Read postfix expression
 tokens = postfix_expression.split()
 evaluate = Evaluate(len(tokens))
@@ -117,4 +116,3 @@ if evaluate.validate_postfix_expression(tokens):
     print(evaluate.evaluate_postfix_expression(tokens))
 else:
     print('Invalid postfix expression')
-    
